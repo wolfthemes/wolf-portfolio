@@ -1,0 +1,18 @@
+# build and dist
+pack
+
+# Ignore stuff
+**/.sass-cache
+**/node_modules
+**/.grunt
+**/bower_components
+
+# Sublime Text 2
+*.sublime-project
+*.sublime-workspace
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini

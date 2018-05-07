@@ -1,0 +1,172 @@
+/* Twentyseventeen */
+.twentyseventeen{
+	.work-title{
+		padding: 0;
+	}
+}
+
+/* Filter */
+#work-filter-container {
+
+}
+
+#work-filter {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;
+	margin-top:0;
+
+	li {
+		list-style-type: none!important;
+		display:inline-block;
+
+		a {
+			margin-right: 20px;
+		}
+	}
+}
+
+.work{
+	width: calc( 100% + 20px );
+	margin-left: -10px!important;
+}
+
+.work-item{
+	padding: 10px;
+
+	img{
+		width: 100%;
+	}
+}
+
+.work-title{
+	margin-top: 10px;
+}
+
+@media screen and (min-width: 500px) {
+
+	.work-grid-col-2,
+	.work-grid-col-3,
+	.work-grid-col-4,
+	.work-grid-col-5,
+	.work-grid-col-6,
+	.works-grid-col-2,
+	.works-grid-col-3,
+	.works-grid-col-4,
+	.works-grid-col-5,
+	.works-grid-col-6{
+		.work-item{
+			float: left;
+			width: 50%;
+		}
+	}
+
+	.work-grid-col-3,
+	.works-grid-col-3{
+		.work-item{
+			float: left;
+			width: 33.33%;
+
+			&:nth-child(2n+1){
+				clear:none;
+			}
+
+			&:nth-child(3n+1){
+				clear:left;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 900px) {
+
+	span.play-overlay{
+		background-size: 60px 60px;
+	}
+
+	.work-grid-col-3,
+	.work-grid-col-6,
+	.works-grid-col-3,
+	.works-grid-col-6{
+		.work-item{
+			float: left;
+			width: 33.33%;
+
+			&:nth-child(2n+1){
+				clear:none;
+			}
+
+			&:nth-child(3n+1){
+				clear:left;
+			}
+		}
+	}
+
+	.work-grid-col-4,
+	.works-grid-col-4{
+		.work-item{
+			width: 25%;
+
+			&:nth-child(2n+1){
+				clear:none;
+			}
+
+			&:nth-child(4n+1){
+				clear:left;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+
+	.work-grid-col-5,
+	.works-grid-col-5{
+		.work-item{
+			width: 20%;
+
+			&:nth-child(2n+1){
+				clear:none;
+			}
+
+			&:nth-child(3n+1){
+				clear:none;
+			}
+
+			&:nth-child(4n+1){
+				clear:none;
+			}
+
+			&:nth-child(5n+1){
+				clear:left;
+			}
+		}
+	}
+
+	.work-grid-col-6,
+	.works-grid-col-6{
+		.work-item{
+			width: 16.65%;
+
+			&:nth-child(2n+1){
+				clear:none;
+			}
+
+			&:nth-child(3n+1){
+				clear:none;
+			}
+
+			&:nth-child(4n+1){
+				clear:none;
+			}
+
+			&:nth-child(5n+1){
+				clear:none;
+			}
+
+			&:nth-child(6n+1){
+				clear:left;
+			}
+		}
+	}
+}
