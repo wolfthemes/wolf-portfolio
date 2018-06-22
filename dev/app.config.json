@@ -1,6 +1,6 @@
 {
-	"version" : "1.2.0",
-	"updated" : "2018-05-07",
+	"version" : "1.2.1",
+	"updated" : "2018-06-13",
 	"slug" : "wolf-portfolio",
 	"textdomain" : "wolf-portfolio",
 	"name" : "Wolf Portfolio",
@@ -13,7 +13,7 @@
 	"author" : "WolfThemes",
 	"authorURI" : "https://wolfthemes.com",
 	"requires" : "4.6",
-	"tested" : "4.9.5",
+	"tested" : "4.9.6",
 	"root" : "..",
 	"cssPath" : "../assets/css",
 	"jsPath" : "../assets/js",

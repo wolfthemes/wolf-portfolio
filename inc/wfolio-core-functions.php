@@ -173,3 +173,23 @@ function wolf_portfolio_get_option( $value, $default = null ) {
 		return $default;
 	}
 }
+
+/**
+ * Overwrite post type slug
+ *
+ * @param array $args
+ * @return array $args
+ */
+function wfolio_overwrite_post_type( $args, $post_type ) {
+	
+	if ( wolf_portfolio_get_option( 'slug' ) && 'work' === $post_type ) {
+		$args['rewrite']['slug'] = sanitize_title_with_dashes( wolf_portfolio_get_option( 'slug' ) );
+	}
+
+	if ( wolf_portfolio_get_option( 'name' ) && 'work' === $post_type ) {
+		$args['labels']['singular_name'] = esc_attr( wolf_portfolio_get_option( 'name' ) );
+	}
+
+	return $args;
+}
+add_filter( 'register_post_type_args', 'wfolio_overwrite_post_type', 20, 2 );

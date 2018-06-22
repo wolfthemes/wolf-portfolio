@@ -1,3 +1,7 @@
+#### 13th June 2018 - Version 1.2.1
+
+* Tweak: Added post type slug and name option
+
 #### 7th May 2018 - Version 1.2.0
 
 * Tweak: Add post state in admin

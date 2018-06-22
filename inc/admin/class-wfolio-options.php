@@ -67,6 +67,8 @@ class Wolf_Portfolio_Options {
 		register_setting( 'wolf-portfolio-settings', 'wolf_portfolio_settings', array( $this, 'settings_validate' ) );
 		add_settings_section( 'wolf-portfolio-settings', '', array( $this, 'section_intro' ), 'wolf-portfolio-settings' );
 		add_settings_field( 'page_id', esc_html__( 'Portfolio Page', '%TEXTDOMAIN%' ), array( $this, 'setting_page_id' ), 'wolf-portfolio-settings', 'wolf-portfolio-settings' );
+		add_settings_field( 'name', esc_html__( 'Portfolio Item Name', '%TEXTDOMAIN%' ), array( $this, 'setting_name' ), 'wolf-portfolio-settings', 'wolf-portfolio-settings' );
+		add_settings_field( 'slug', esc_html__( 'Portfolio Item Slug', '%TEXTDOMAIN%' ), array( $this, 'setting_slug' ), 'wolf-portfolio-settings', 'wolf-portfolio-settings' );
 		// add_settings_field( 'layout', esc_html__( 'Layout', '%TEXTDOMAIN%' ), array( $this, 'setting_layout' ), 'wolf-portfolio-settings', 'wolf-portfolio-settings' );
 		add_settings_field( 'columns', esc_html__( 'Max number of column', '%TEXTDOMAIN%' ), array( $this, 'setting_columns' ), 'wolf-portfolio-settings', 'wolf-portfolio-settings', array( 'class' => 'wolf-portfolio-settings-columns' ) );
 	}
@@ -81,6 +83,11 @@ class Wolf_Portfolio_Options {
 		if ( isset( $input['page_id'] ) ) {
 			update_option( '_wolf_portfolio_page_id', intval( $input['page_id'] ) );
 			unset( $input['page_id'] );
+		}
+
+		if ( isset( $input['slug'] ) ) {
+			$input['slug'] = sanitize_title_with_dashes( $input['slug'] );
+			flush_rewrite_rules();
 		}
 
 		return $input;
@@ -120,6 +127,26 @@ class Wolf_Portfolio_Options {
 				<option <?php selected( absint( $k ), get_option( '_wolf_portfolio_page_id' ) ); ?> value="<?php echo intval( $k ); ?>"><?php echo sanitize_text_field( $v ); ?></option>
 			<?php endforeach; ?>
 		</select>
+		<?php
+	}
+
+	/**
+	 * Name
+	 */
+	public function setting_name() {
+		?>
+		<input type="text" name="wolf_portfolio_settings[name]" value="<?php echo esc_attr( wolf_portfolio_get_option( 'name', 'Work' ) ); ?>">
+		<?php //esc_html_e( 'Number of column on desktop screen', '%TEXTDOMAIN%' ); ?>
+		<?php
+	}
+
+	/**
+	 * Slug
+	 */
+	public function setting_slug() {
+		?>
+		<input type="text" name="wolf_portfolio_settings[slug]" value="<?php echo esc_attr( wolf_portfolio_get_option( 'slug', 'work' ) ); ?>">
+		<?php //esc_html_e( 'Number of column on desktop screen', '%TEXTDOMAIN%' ); ?>
 		<?php
 	}
 
