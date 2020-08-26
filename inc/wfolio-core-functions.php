@@ -4,10 +4,10 @@
  *
  * General core functions available on admin and frontend
  *
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Core
- * @package %PACKAGENAME%/Core
- * @version %VERSION%
+ * @package WolfPortfolio/Core
+ * @version 1.2.2
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -74,7 +74,7 @@ if ( ! function_exists( 'wolf_get_portfolio_url' ) ) {
  * @return void
  */
 function wolf_portfolio_get_template_part( $slug, $name = '' ) {
-	
+
 	$template = '';
 
 	$wolf_portfolio = WFOLIO();
@@ -163,11 +163,11 @@ function wolf_portfolio_locate_template( $template_name, $template_path = '', $d
 function wolf_portfolio_get_option( $value, $default = null ) {
 
 	$wolf_portfolio_settings = get_option( 'wolf_portfolio_settings' );
-	
+
 	if ( isset( $wolf_portfolio_settings[ $value ] ) && '' != $wolf_portfolio_settings[ $value ] ) {
-		
+
 		return $wolf_portfolio_settings[ $value ];
-	
+
 	} elseif ( $default ) {
 
 		return $default;
@@ -181,7 +181,7 @@ function wolf_portfolio_get_option( $value, $default = null ) {
  * @return array $args
  */
 function wfolio_overwrite_post_type( $args, $post_type ) {
-	
+
 	if ( wolf_portfolio_get_option( 'slug' ) && 'work' === $post_type ) {
 		$args['rewrite']['slug'] = sanitize_title_with_dashes( wolf_portfolio_get_option( 'slug' ) );
 	}

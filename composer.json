@@ -1,0 +1,16 @@
+{
+	"name": "wolfthemes/wolf-portfolio",
+	"description": "A portfolio post type for your theme.",
+	"type": "wordpress-plugin",
+	"homepage": "https://github.com/wolfthemes/wolf-portfolio",
+	"authors": [
+		{
+			"name": "WolfThemes",
+			"email": "contact@wolfthemes.com",
+			"homepage": "https://wolfthemes.com"
+		}
+	],
+	"require": {
+		"php": ">=5.6"
+	}
+}

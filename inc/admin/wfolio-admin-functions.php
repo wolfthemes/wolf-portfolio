@@ -4,10 +4,10 @@
  *
  * Functions available on admin
  *
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Core
- * @package %PACKAGENAME%/Core
- * @version %VERSION%
+ * @package WolfPortfolio/Core
+ * @version 1.2.2
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -21,12 +21,12 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @param object $post
  * @return array $states
  */
-function wfolio_custom_post_states( $states, $post ) { 
+function wfolio_custom_post_states( $states, $post ) {
 
 	if ( 'page' == get_post_type( $post->ID ) && absint( $post->ID ) === wolf_portfolio_get_page_id() ) {
 
 		$states[] = esc_html__( 'Portfolio Page' );
-	} 
+	}
 
 	return $states;
 }

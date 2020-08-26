@@ -2,10 +2,10 @@
 /**
  * %NAME% register post type
  *
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Core
- * @package %PACKAGENAME%/Admin
- * @version %VERSION%
+ * @package WolfPortfolio/Admin
+ * @version 1.2.2
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -13,21 +13,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /* Register Work post type */
-$labels = array(
-	'name' => esc_html__( 'Works', '%TEXTDOMAIN%' ),
-	'singular_name' => esc_html__( 'Work', '%TEXTDOMAIN%' ),
-	'add_new' => esc_html__( 'Add New', '%TEXTDOMAIN%' ),
-	'add_new_item' => esc_html__( 'Add New Work', '%TEXTDOMAIN%' ),
-	'all_items'  => esc_html__( 'All Works', '%TEXTDOMAIN%' ),
-	'edit_item' => esc_html__( 'Edit Work', '%TEXTDOMAIN%' ),
-	'new_item' => esc_html__( 'New Work', '%TEXTDOMAIN%' ),
-	'view_item' => esc_html__( 'View Work', '%TEXTDOMAIN%' ),
-	'search_items' => esc_html__( 'Search Works', '%TEXTDOMAIN%' ),
-	'not_found' => esc_html__( 'No Works found', '%TEXTDOMAIN%' ),
-	'not_found_in_trash' => esc_html__( 'No Works found in Trash', '%TEXTDOMAIN%' ),
+$labels = apply_filters( 'wolf_work_post_type_labels', array(
+	'name' => esc_html__( 'Works', 'wolf-portfolio' ),
+	'singular_name' => esc_html__( 'Work', 'wolf-portfolio' ),
+	'add_new' => esc_html__( 'Add New', 'wolf-portfolio' ),
+	'add_new_item' => esc_html__( 'Add New Work', 'wolf-portfolio' ),
+	'all_items'  => esc_html__( 'All Works', 'wolf-portfolio' ),
+	'edit_item' => esc_html__( 'Edit Work', 'wolf-portfolio' ),
+	'new_item' => esc_html__( 'New Work', 'wolf-portfolio' ),
+	'view_item' => esc_html__( 'View Work', 'wolf-portfolio' ),
+	'search_items' => esc_html__( 'Search Works', 'wolf-portfolio' ),
+	'not_found' => esc_html__( 'No Works found', 'wolf-portfolio' ),
+	'not_found_in_trash' => esc_html__( 'No Works found in Trash', 'wolf-portfolio' ),
 	'parent_item_colon' => '',
-	'menu_name' => esc_html__( 'Portfolio', '%TEXTDOMAIN%' ),
-);
+	'menu_name' => esc_html__( 'Portfolio', 'wolf-portfolio' ),
+) );
 
 $args = array(
 	'labels' => $labels,
@@ -44,7 +44,7 @@ $args = array(
 	'taxonomies' => array(),
 	'supports' => array( 'title', 'editor', 'author', 'post-formats', 'thumbnail', 'custom-fields', 'excerpt' ),
 	'exclude_from_search' => false,
-	'description' => esc_html__( 'Present your work', '%TEXTDOMAIN%' ),
+	'description' => esc_html__( 'Present your work', 'wolf-portfolio' ),
 	'menu_icon' => 'dashicons-admin-customizer',
 );
 

@@ -4,15 +4,13 @@
  *
  * Action/filter hooks used for %PACKAGENAME% functions/templates
  *
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Core
- * @package %PACKAGENAME%/Templates
+ * @package WolfPortfolio/Templates
  * @since 1.1.6
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Body class

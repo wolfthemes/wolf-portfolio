@@ -1,0 +1,14 @@
+{
+	"version": "1.2.3",
+	"updated": "2020-08-25",
+	"slug": "wolf-portfolio",
+	"name": "Wolf Portfolio",
+	"packagename": "WolfPortfolio",
+	"created": "2016-03-03",
+	"createdNice": "3rd march 2016",
+	"description": "A portfolio post type for your theme.",
+	"link": "https://github.com/wolfthemes/wolf-portfolio",
+	"shortlink": "http://wlfthm.es/wolf-portfolio",
+	"author": "WolfThemes",
+	"authorURI": "https://wolfthemes.com"
+}

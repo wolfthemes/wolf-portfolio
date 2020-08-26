@@ -4,9 +4,9 @@
  *
  * %NAME% front-end functions
  *
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Core
- * @package %PACKAGENAME%/Functions
+ * @package WolfPortfolio/Functions
  * @since 1.1.6
  */
 
@@ -86,8 +86,8 @@ if ( ! function_exists( 'wolf_portfolio_nav' ) ) {
 			return;
 		?>
 		<nav class="work-navigation" role="navigation">
-			<?php previous_post_link( '%link', _x( '<span class="meta-nav">&larr;</span> %title', 'Previous post link', '%TEXTDOMAIN%' ) ); ?>
-			<?php next_post_link( '%link', _x( '%title <span class="meta-nav">&rarr;</span>', 'Next post link', '%TEXTDOMAIN%' ) ); ?>
+			<?php previous_post_link( '%link', _x( '<span class="meta-nav">&larr;</span> %title', 'Previous post link', 'wolf-portfolio' ) ); ?>
+			<?php next_post_link( '%link', _x( '%title <span class="meta-nav">&rarr;</span>', 'Next post link', 'wolf-portfolio' ) ); ?>
 		</nav><!-- .navigation -->
 		<?php
 	}

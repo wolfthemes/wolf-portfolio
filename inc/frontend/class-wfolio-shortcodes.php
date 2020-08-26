@@ -3,16 +3,14 @@
  * %NAME% Shortcode.
  *
  * @class Wolf_Portfolio_Shortcode
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Core
- * @package %PACKAGENAME%/Shortcode
- * @version %VERSION%
+ * @package WolfPortfolio/Shortcode
+ * @version 1.2.2
  * @since 1.1.6
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Wolf_Portfolio_Shortcode class.

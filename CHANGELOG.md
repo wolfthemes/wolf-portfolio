@@ -1,3 +1,8 @@
+# Changelog
+#### 10th October 2018 - Version 1.2.2
+
+* Tweak: Added "wolf_work_post_type_labels" filter
+
 #### 13th June 2018 - Version 1.2.1
 
 * Tweak: Added post type slug and name option

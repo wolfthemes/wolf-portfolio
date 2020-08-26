@@ -3,15 +3,13 @@
  * %NAME% Admin.
  *
  * @class Wolf_Portfolio_Admin
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Admin
- * @package %PACKAGENAME%/Admin
- * @version %VERSION%
+ * @package WolfPortfolio/Admin
+ * @version 1.2.2
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Wolf_Portfolio_Admin class.
@@ -50,12 +48,12 @@ class Wolf_Portfolio_Admin {
 		add_filter( 'plugin_action_links_' . plugin_basename( WFOLIO_PATH ), array( $this, 'settings_action_links' ) );
 
 		// Plugin update notifications
-		add_action( 'admin_init', array( $this, 'plugin_update' ) );
+		//add_action( 'admin_init', array( $this, 'plugin_update' ) );
 
 		// Create page notice
 		add_action( 'admin_notices', array( $this, 'check_page' ) );
 		add_action( 'admin_notices', array( $this, 'create_page' ) );
-		
+
 		// Hide editors from index page
 		add_action( 'edit_form_after_title', array( $this, 'is_index_page' ) );
 		add_action( 'admin_init', array( $this, 'hide_editor' ) );
@@ -105,7 +103,7 @@ class Wolf_Portfolio_Admin {
 
 			$message = '<strong>Wolf Portfolio</strong> ' . sprintf(
 					wp_kses(
-						__( 'says : <em>Almost done! you need to <a href="%1$s">create a page</a> for your portfolio or <a href="%2$s">select an existing page</a> in the plugin settings</em>.', '%TEXTDOMAIN%' ),
+						__( 'says : <em>Almost done! you need to <a href="%1$s">create a page</a> for your portfolio or <a href="%2$s">select an existing page</a> in the plugin settings</em>.', 'wolf-portfolio' ),
 						array(
 							'a' => array(
 								'href' => array(),
@@ -128,7 +126,7 @@ class Wolf_Portfolio_Admin {
 					&nbsp;
 					<a href="%2$s" class="button button-primary">Select an existing page</a>
 					&nbsp;
-					<a href="%3$s" class="button">Skip setup</a>', '%TEXTDOMAIN%' ),
+					<a href="%3$s" class="button">Skip setup</a>', 'wolf-portfolio' ),
 
 					array(
 							'a' => array(
@@ -172,7 +170,7 @@ class Wolf_Portfolio_Admin {
 
 			// Create post object
 			$post = array(
-				'post_title'  => esc_html__( 'Portfolio', '%TEXTDOMAIN%' ),
+				'post_title'  => esc_html__( 'Portfolio', 'wolf-portfolio' ),
 				'post_type'   => 'page',
 				'post_status' => 'publish',
 			);
@@ -185,7 +183,7 @@ class Wolf_Portfolio_Admin {
 				update_option( '_wolf_portfolio_page_id', $post_id );
 				update_post_meta( $post_id, '_wpb_status', 'off' ); // disable page builder mode for this page
 
-				$message = esc_html__( 'Your portfolio page has been created succesfully', '%TEXTDOMAIN%' );
+				$message = esc_html__( 'Your portfolio page has been created succesfully', 'wolf-portfolio' );
 
 				$output = '<div class="updated"><p>';
 
@@ -207,7 +205,7 @@ class Wolf_Portfolio_Admin {
 	public function is_index_page() {
 
 		if ( isset( $_GET['post'] ) && absint( $_GET['post'] ) == wolf_portfolio_get_page_id() ) {
-			$message = esc_html__( 'You are currently editing the page that shows the portfolio.', '%TEXTDOMAIN%' );
+			$message = esc_html__( 'You are currently editing the page that shows the portfolio.', 'wolf-portfolio' );
 
 			$output = '<div class="notice notice-warning inline"><p>';
 
@@ -253,7 +251,7 @@ class Wolf_Portfolio_Admin {
 	 */
 	public function admin_columns_head_work_thumb( $columns ) {
 
-		$columns['work_thumbnail']   = esc_html__( 'Thumbnail', '%TEXTDOMAIN%' );
+		$columns['work_thumbnail']   = esc_html__( 'Thumbnail', 'wolf-portfolio' );
 		return $columns;
 	}
 
@@ -270,7 +268,7 @@ class Wolf_Portfolio_Admin {
 		if ( 'work_thumbnail' == $column_name ) {
 
 			if ( $thumbnail ) {
-				echo '<a href="' . get_edit_post_link() . '" title="' . esc_attr( sprintf( esc_html__( 'Edit "%s"', '%TEXTDOMAIN%' ), get_the_title() ) ) . '">' . get_the_post_thumbnail( '', array( 60, 60 ), array( 'style' => 'max-width:60px;height:auto;' ) ) . '</a>';
+				echo '<a href="' . get_edit_post_link() . '" title="' . esc_attr( sprintf( esc_html__( 'Edit "%s"', 'wolf-portfolio' ), get_the_title() ) ) . '">' . get_the_post_thumbnail( '', array( 60, 60 ), array( 'style' => 'max-width:60px;height:auto;' ) ) . '</a>';
 			}
 		}
 	}
@@ -280,7 +278,7 @@ class Wolf_Portfolio_Admin {
 	 */
 	public function settings_action_links( $links ) {
 		$setting_link = array(
-			'<a href="' . admin_url( 'edit.php?post_type=work&page=wolf-portfolio-settings' ) . '">' . esc_html__( 'Settings', '%TEXTDOMAIN%' ) . '</a>',
+			'<a href="' . admin_url( 'edit.php?post_type=work&page=wolf-portfolio-settings' ) . '">' . esc_html__( 'Settings', 'wolf-portfolio' ) . '</a>',
 		);
 		return array_merge( $links, $setting_link );
 	}
@@ -289,7 +287,7 @@ class Wolf_Portfolio_Admin {
 	 * Plugin update
 	 */
 	public function plugin_update() {
-		
+
 		$plugin_name = WFOLIO_SLUG;
 		$plugin_slug = WFOLIO_SLUG;
 		$plugin_path = WFOLIO_PATH;

@@ -3,15 +3,13 @@
  * %NAME% Options.
  *
  * @class Wolf_Portfolio_Options
- * @author %AUTHOR%
+ * @author WolfThemes
  * @category Admin
- * @package %PACKAGENAME%/Admin
- * @version %VERSION%
+ * @package WolfPortfolio/Admin
+ * @version 1.2.2
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Wolf_Portfolio_Options class.
@@ -21,7 +19,7 @@ class Wolf_Portfolio_Options {
 	 * Constructor
 	 */
 	public function __construct() {
-		
+
 		// default options
 		add_action( 'admin_init', array( $this, 'default_options' ) );
 
@@ -37,8 +35,8 @@ class Wolf_Portfolio_Options {
 	 */
 	public function add_settings_menu() {
 
-		add_submenu_page( 'edit.php?post_type=work', esc_html__( 'Settings', '%TEXTDOMAIN%' ), esc_html__( 'Settings', '%TEXTDOMAIN%' ), 'edit_plugins', 'wolf-portfolio-settings', array( $this, 'options_form' ) );
-		add_submenu_page( 'edit.php?post_type=work', esc_html__( 'Shortcode', '%TEXTDOMAIN%' ), esc_html__( 'Shortcode', '%TEXTDOMAIN%' ), 'edit_plugins', 'wolf-portfolio-shortcode', array( $this, 'help' ) );
+		add_submenu_page( 'edit.php?post_type=work', esc_html__( 'Settings', 'wolf-portfolio' ), esc_html__( 'Settings', 'wolf-portfolio' ), 'edit_plugins', 'wolf-portfolio-settings', array( $this, 'options_form' ) );
+		add_submenu_page( 'edit.php?post_type=work', esc_html__( 'Shortcode', 'wolf-portfolio' ), esc_html__( 'Shortcode', 'wolf-portfolio' ), 'edit_plugins', 'wolf-portfolio-shortcode', array( $this, 'help' ) );
 	}
 
 	/**
@@ -66,11 +64,11 @@ class Wolf_Portfolio_Options {
 
 		register_setting( 'wolf-portfolio-settings', 'wolf_portfolio_settings', array( $this, 'settings_validate' ) );
 		add_settings_section( 'wolf-portfolio-settings', '', array( $this, 'section_intro' ), 'wolf-portfolio-settings' );
-		add_settings_field( 'page_id', esc_html__( 'Portfolio Page', '%TEXTDOMAIN%' ), array( $this, 'setting_page_id' ), 'wolf-portfolio-settings', 'wolf-portfolio-settings' );
-		add_settings_field( 'name', esc_html__( 'Portfolio Item Name', '%TEXTDOMAIN%' ), array( $this, 'setting_name' ), 'wolf-portfolio-settings', 'wolf-portfolio-settings' );
-		add_settings_field( 'slug', esc_html__( 'Portfolio Item Slug', '%TEXTDOMAIN%' ), array( $this, 'setting_slug' ), 'wolf-portfolio-settings', 'wolf-portfolio-settings' );
-		// add_settings_field( 'layout', esc_html__( 'Layout', '%TEXTDOMAIN%' ), array( $this, 'setting_layout' ), 'wolf-portfolio-settings', 'wolf-portfolio-settings' );
-		add_settings_field( 'columns', esc_html__( 'Max number of column', '%TEXTDOMAIN%' ), array( $this, 'setting_columns' ), 'wolf-portfolio-settings', 'wolf-portfolio-settings', array( 'class' => 'wolf-portfolio-settings-columns' ) );
+		add_settings_field( 'page_id', esc_html__( 'Portfolio Page', 'wolf-portfolio' ), array( $this, 'setting_page_id' ), 'wolf-portfolio-settings', 'wolf-portfolio-settings' );
+		add_settings_field( 'name', esc_html__( 'Portfolio Item Name', 'wolf-portfolio' ), array( $this, 'setting_name' ), 'wolf-portfolio-settings', 'wolf-portfolio-settings' );
+		add_settings_field( 'slug', esc_html__( 'Portfolio Item Slug', 'wolf-portfolio' ), array( $this, 'setting_slug' ), 'wolf-portfolio-settings', 'wolf-portfolio-settings' );
+		// add_settings_field( 'layout', esc_html__( 'Layout', 'wolf-portfolio' ), array( $this, 'setting_layout' ), 'wolf-portfolio-settings', 'wolf-portfolio-settings' );
+		add_settings_field( 'columns', esc_html__( 'Max number of column', 'wolf-portfolio' ), array( $this, 'setting_columns' ), 'wolf-portfolio-settings', 'wolf-portfolio-settings', array( 'class' => 'wolf-portfolio-settings-columns' ) );
 	}
 
 	/**
@@ -109,7 +107,7 @@ class Wolf_Portfolio_Options {
 	 * @return string
 	 */
 	public function setting_page_id() {
-		$page_option = array( '' => esc_html__( '- Disabled -', '%TEXTDOMAIN%' ) );
+		$page_option = array( '' => esc_html__( '- Disabled -', 'wolf-portfolio' ) );
 		$pages = get_pages();
 
 		foreach ( $pages as $page ) {
@@ -122,7 +120,7 @@ class Wolf_Portfolio_Options {
 		}
 		?>
 		<select name="wolf_portfolio_settings[page_id]">
-			<option value="-1"><?php esc_html_e( 'Select a page...', '%TEXTDOMAIN%' ); ?></option>
+			<option value="-1"><?php esc_html_e( 'Select a page...', 'wolf-portfolio' ); ?></option>
 			<?php foreach ( $page_option as $k => $v ) : ?>
 				<option <?php selected( absint( $k ), get_option( '_wolf_portfolio_page_id' ) ); ?> value="<?php echo intval( $k ); ?>"><?php echo sanitize_text_field( $v ); ?></option>
 			<?php endforeach; ?>
@@ -136,7 +134,7 @@ class Wolf_Portfolio_Options {
 	public function setting_name() {
 		?>
 		<input type="text" name="wolf_portfolio_settings[name]" value="<?php echo esc_attr( wolf_portfolio_get_option( 'name', 'Work' ) ); ?>">
-		<?php //esc_html_e( 'Number of column on desktop screen', '%TEXTDOMAIN%' ); ?>
+		<?php //esc_html_e( 'Number of column on desktop screen', 'wolf-portfolio' ); ?>
 		<?php
 	}
 
@@ -146,7 +144,7 @@ class Wolf_Portfolio_Options {
 	public function setting_slug() {
 		?>
 		<input type="text" name="wolf_portfolio_settings[slug]" value="<?php echo esc_attr( wolf_portfolio_get_option( 'slug', 'work' ) ); ?>">
-		<?php //esc_html_e( 'Number of column on desktop screen', '%TEXTDOMAIN%' ); ?>
+		<?php //esc_html_e( 'Number of column on desktop screen', 'wolf-portfolio' ); ?>
 		<?php
 	}
 
@@ -161,7 +159,7 @@ class Wolf_Portfolio_Options {
 			<option <?php if ( $column == wolf_portfolio_get_option( 'col', 3 ) ) echo 'selected="selected"'; ?>><?php echo intval( $column ); ?></option>
 			<?php endforeach; ?>
 		</select>
-		<?php esc_html_e( 'Number of column on desktop screen', '%TEXTDOMAIN%' ); ?>
+		<?php esc_html_e( 'Number of column on desktop screen', 'wolf-portfolio' ); ?>
 		<?php
 	}
 
@@ -176,7 +174,7 @@ class Wolf_Portfolio_Options {
 			<option <?php if ( $column == wolf_portfolio_get_option( 'col', 3 ) ) echo 'selected="selected"'; ?>><?php echo intval( $column ); ?></option>
 			<?php endforeach; ?>
 		</select>
-		<?php esc_html_e( 'Number of column on desktop screen', '%TEXTDOMAIN%' ); ?>
+		<?php esc_html_e( 'Number of column on desktop screen', 'wolf-portfolio' ); ?>
 		<?php
 	}
 
@@ -190,13 +188,13 @@ class Wolf_Portfolio_Options {
 			<h2><?php esc_html_e( 'Portfolio Settings' ) ?></h2>
 			<?php if ( isset( $_GET['settings-updated'] ) && $_GET['settings-updated'] ) { ?>
 				<div id="setting-error-settings_updated" class="updated settings-error">
-					<p><strong><?php esc_html_e( 'Settings saved.', '%TEXTDOMAIN%' ); ?></strong></p>
+					<p><strong><?php esc_html_e( 'Settings saved.', 'wolf-portfolio' ); ?></strong></p>
 				</div>
 			<?php } ?>
 			<form action="options.php" method="post">
 				<?php settings_fields( 'wolf-portfolio-settings' ); ?>
 				<?php do_settings_sections( 'wolf-portfolio-settings' ); ?>
-				<p class="submit"><input name="save" type="submit" class="button-primary" value="<?php esc_html_e( 'Save Changes', '%TEXTDOMAIN%' ); ?>" /></p>
+				<p class="submit"><input name="save" type="submit" class="button-primary" value="<?php esc_html_e( 'Save Changes', 'wolf-portfolio' ); ?>" /></p>
 			</form>
 		</div>
 		<?php
@@ -208,13 +206,13 @@ class Wolf_Portfolio_Options {
 	public function help() {
 		?>
 		<div class="wrap">
-			<h2><?php esc_html_e( 'Portfolio Shortcode', '%TEXTDOMAIN%' ) ?></h2>
-			<p><?php esc_html_e( 'To display your last works in your post or page you can use the following shortcode.', '%TEXTDOMAIN%' ); ?></p>
+			<h2><?php esc_html_e( 'Portfolio Shortcode', 'wolf-portfolio' ) ?></h2>
+			<p><?php esc_html_e( 'To display your last works in your post or page you can use the following shortcode.', 'wolf-portfolio' ); ?></p>
 			<p><code>[wolf_last_works]</code></p>
-			<p><?php esc_html_e( 'Additionally, you can add a count and/or a category attribute.', '%TEXTDOMAIN%' ); ?></p>
+			<p><?php esc_html_e( 'Additionally, you can add a count and/or a category attribute.', 'wolf-portfolio' ); ?></p>
 			<p><code>[wolf_last_works count="6" category="my-category"]</code></p>
 
-			<p><?php esc_html_e( 'You can also add a column count attribute.', '%TEXTDOMAIN%' ); ?></p>
+			<p><?php esc_html_e( 'You can also add a column count attribute.', 'wolf-portfolio' ); ?></p>
 			<p><code>[wolf_last_works col="2|3|4" category="my-category"]</code></p>
 		</div>
 		<?php

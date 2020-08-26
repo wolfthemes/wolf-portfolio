@@ -4,14 +4,12 @@
  *
  * Override this template by copying it to yourtheme/wolf-portfolio/portfolio-template.php
  *
- * @author %AUTHOR%
- * @package %PACKAGENAME%/Templates
+ * @author WolfThemes
+ * @package WolfPortfolio/Templates
  * @since 1.1.2
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
+defined( 'ABSPATH' ) || exit;
 
 get_header( 'portfolio' ); 
 
