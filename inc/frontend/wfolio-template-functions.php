@@ -1,6 +1,6 @@
 <?php
 /**
- * %NAME% Template Functions
+ * Portfolio Template Functions
  *
  * Functions used in the template files to output content - in most cases hooked in via the template actions. All functions are pluggable.
  *
@@ -18,10 +18,10 @@ defined( 'ABSPATH' ) || exit;
 function wolf_portfolio_generator_tag( $gen, $type ) {
 	switch ( $type ) {
 		case 'html':
-			$gen .= "\n" . '<meta name="generator" content="%PACKAGENAME% ' . esc_attr( WFOLIO_VERSION ) . '">';
+			$gen .= "\n" . '<meta name="generator" content="WolfPortfolio ' . esc_attr( WFOLIO_VERSION ) . '">';
 			break;
 		case 'xhtml':
-			$gen .= "\n" . '<meta name="generator" content="%PACKAGENAME% ' . esc_attr( WFOLIO_VERSION ) . '" />';
+			$gen .= "\n" . '<meta name="generator" content="WolfPortfolio ' . esc_attr( WFOLIO_VERSION ) . '" />';
 			break;
 	}
 	return $gen;

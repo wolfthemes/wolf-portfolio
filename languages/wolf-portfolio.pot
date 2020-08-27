@@ -1,0 +1,695 @@
+# Copyright (C) 2020 WolfThemes
+# This file is distributed under the same license as the Portfolio package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Portfolio 1.2.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wolf-portfolio\n"
+"POT-Creation-Date: 2020-08-27 13:24:31+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/basic-theme/exclude/file.php:3
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/plugin-include/plugin-include.php:6
+msgid "Exclude"
+msgstr ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/plugin-include/include/file.php:2
+msgid "Include"
+msgstr ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/add-domain.php:2
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:2
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:3
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:4
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-domains.php:2
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-domains.php:3
+msgid "String"
+msgstr ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:9
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:10
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:11
+msgid "1 Star"
+msgid_plural "%s Stars"
+msgstr[0] ""
+msgstr[1] ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/translator-comments/translator-comments.php:7
+#. translators: A single line translators comment.
+msgid "A"
+msgstr ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/translator-comments/translator-comments.php:15
+#. translators: A multiline translators comment.
+msgid "B"
+msgstr ""
+
+#: inc/admin/class-wfolio-admin.php:106
+#: pack/wolf-portfolio/wolf-portfolio.php:220
+msgid ""
+"says : <em>Almost done! you need to <a href=\"%1$s\">create a page</a> for "
+"your portfolio or <a href=\"%2$s\">select an existing page</a> in the "
+"plugin settings</em>."
+msgstr ""
+
+#: inc/admin/class-wfolio-admin.php:124
+msgid ""
+"<br><br>\n"
+"\t\t\t\t\t<a href=\"%1$s\" class=\"button button-primary\">Create a "
+"page</a>\n"
+"\t\t\t\t\t&nbsp;\n"
+"\t\t\t\t\t<a href=\"%2$s\" class=\"button button-primary\">Select an "
+"existing page</a>\n"
+"\t\t\t\t\t&nbsp;\n"
+"\t\t\t\t\t<a href=\"%3$s\" class=\"button\">Skip setup</a>"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Portfolio"
+msgstr ""
+
+#: inc/admin/class-wfolio-admin.php:186
+#: pack/wolf-portfolio/wolf-portfolio.php:275
+msgid "Your portfolio page has been created succesfully"
+msgstr ""
+
+#: inc/admin/class-wfolio-admin.php:208
+msgid "You are currently editing the page that shows the portfolio."
+msgstr ""
+
+#: inc/admin/class-wfolio-admin.php:254
+msgid "Thumbnail"
+msgstr ""
+
+#: inc/admin/class-wfolio-admin.php:271
+msgid "Edit \"%s\""
+msgstr ""
+
+#: inc/admin/class-wfolio-admin.php:281 inc/admin/class-wfolio-options.php:38
+#: pack/wolf-portfolio/wolf-portfolio.php:565
+msgid "Settings"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:234
+#: inc/admin/class-wfolio-metabox.php:249
+#: inc/admin/class-wfolio-metabox.php:294
+#: inc/admin/class-wfolio-metabox.php:474
+#: inc/admin/class-wfolio-metabox.php:482
+#: inc/admin/class-wfolio-metabox.php:490
+#: inc/admin/class-wfolio-metabox.php:499
+msgid "Clear"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:235
+#: inc/admin/class-wfolio-metabox.php:475
+#: inc/admin/class-wfolio-metabox.php:483
+#: inc/admin/class-wfolio-metabox.php:491
+msgid "Choose a file"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:250
+#: inc/admin/class-wfolio-metabox.php:295
+#: inc/admin/class-wfolio-metabox.php:500
+msgid "Choose an image"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:282
+msgid "Background color"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:290
+msgid "Background image"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:307
+msgid "Background repeat"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:331
+msgid "Background position"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:344
+msgid "cover (resize)"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:345
+#: inc/admin/class-wfolio-metabox.php:430
+msgid "normal"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:346
+msgid "responsive (hard resize)"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:351
+msgid "Background size"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:362
+msgid "Parallax"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:380
+msgid "Font color"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:390
+msgid "Font Family"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:392
+msgid "default"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:403
+msgid "Font weight"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:405
+msgid ""
+"For example: 400 is normal, 700 is bold.The available font weights depend "
+"on the font.<br>Leave empty to use the theme default style"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:411
+#: inc/admin/class-wfolio-metabox.php:429
+msgid "auto"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:412
+msgid "none"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:413
+msgid "uppercase"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:417
+msgid "Font transform"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:423
+msgid "\"auto\" is the default style in the theme options"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:431
+msgid "italic"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:435
+msgid "Font style"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:441
+msgid "\"auto\" is the default style defined in the theme options"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:448
+msgid "Font letter spacing (omit px)"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:450
+msgid "Leave empty to use the style defined in the theme options"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:472
+msgid "mp4 URL"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:480
+msgid "webm URL"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:488
+msgid "ogv URL"
+msgstr ""
+
+#: inc/admin/class-wfolio-metabox.php:496
+msgid "Video Image Fallback"
+msgstr ""
+
+#: inc/admin/class-wfolio-options.php:39
+#: pack/wolf-portfolio/wolf-portfolio.php:566
+msgid "Shortcode"
+msgstr ""
+
+#: inc/admin/class-wfolio-options.php:67
+#: inc/admin/wfolio-admin-functions.php:28
+#: pack/wolf-portfolio/wolf-portfolio.php:614
+msgid "Portfolio Page"
+msgstr ""
+
+#: inc/admin/class-wfolio-options.php:68
+msgid "Portfolio Item Name"
+msgstr ""
+
+#: inc/admin/class-wfolio-options.php:69
+msgid "Portfolio Item Slug"
+msgstr ""
+
+#: inc/admin/class-wfolio-options.php:71
+#: pack/wolf-portfolio/wolf-portfolio.php:615
+msgid "Max number of column"
+msgstr ""
+
+#: inc/admin/class-wfolio-options.php:110
+msgid "- Disabled -"
+msgstr ""
+
+#: inc/admin/class-wfolio-options.php:123
+#: pack/wolf-portfolio/wolf-portfolio.php:656
+msgid "Select a page..."
+msgstr ""
+
+#: inc/admin/class-wfolio-options.php:162
+#: inc/admin/class-wfolio-options.php:177
+#: pack/wolf-portfolio/wolf-portfolio.php:676
+msgid "Number of column on desktop screen"
+msgstr ""
+
+#: inc/admin/class-wfolio-options.php:188
+#: pack/wolf-portfolio/wolf-portfolio.php:699
+msgid "Portfolio Settings"
+msgstr ""
+
+#: inc/admin/class-wfolio-options.php:191
+#: pack/wolf-portfolio/wolf-portfolio.php:702
+msgid "Settings saved."
+msgstr ""
+
+#: inc/admin/class-wfolio-options.php:197
+#: pack/wolf-portfolio/wolf-portfolio.php:708
+msgid "Save Changes"
+msgstr ""
+
+#: inc/admin/class-wfolio-options.php:209
+#: pack/wolf-portfolio/wolf-portfolio.php:721
+msgid "Portfolio Shortcode"
+msgstr ""
+
+#: inc/admin/class-wfolio-options.php:210
+#: pack/wolf-portfolio/wolf-portfolio.php:722
+msgid ""
+"To display your last works in your post or page you can use the following "
+"shortcode."
+msgstr ""
+
+#: inc/admin/class-wfolio-options.php:212
+msgid "Additionally, you can add a count and/or a category attribute."
+msgstr ""
+
+#: inc/admin/class-wfolio-options.php:215
+msgid "You can also add a column count attribute."
+msgstr ""
+
+#: inc/admin/updater.php:434
+msgid ""
+"The plugin has been updated, but could not be reactivated. Please "
+"reactivate it manually."
+msgstr ""
+
+#: inc/admin/updater.php:435
+msgid "Plugin reactivated successfully."
+msgstr ""
+
+#: inc/admin/wfolio-metaboxes.php:17 pack/wolf-portfolio/wolf-portfolio.php:498
+msgid "Work Details"
+msgstr ""
+
+#: inc/admin/wfolio-metaboxes.php:21 pack/wolf-portfolio/wolf-portfolio.php:514
+msgid "Client"
+msgstr ""
+
+#: inc/admin/wfolio-metaboxes.php:27
+msgid "Link"
+msgstr ""
+
+#: inc/wfolio-register-post-type.php:17
+#: pack/wolf-portfolio/wolf-portfolio.php:416
+msgid "Works"
+msgstr ""
+
+#: inc/wfolio-register-post-type.php:18
+#: pack/wolf-portfolio/wolf-portfolio.php:417
+msgid "Work"
+msgstr ""
+
+#: inc/wfolio-register-post-type.php:19
+#: pack/wolf-portfolio/wolf-portfolio.php:418
+msgid "Add New"
+msgstr ""
+
+#: inc/wfolio-register-post-type.php:20
+#: pack/wolf-portfolio/wolf-portfolio.php:419
+msgid "Add New Work"
+msgstr ""
+
+#: inc/wfolio-register-post-type.php:21
+#: pack/wolf-portfolio/wolf-portfolio.php:420
+msgid "All Works"
+msgstr ""
+
+#: inc/wfolio-register-post-type.php:22
+#: pack/wolf-portfolio/wolf-portfolio.php:421
+msgid "Edit Work"
+msgstr ""
+
+#: inc/wfolio-register-post-type.php:23
+#: pack/wolf-portfolio/wolf-portfolio.php:422
+msgid "New Work"
+msgstr ""
+
+#: inc/wfolio-register-post-type.php:24
+#: pack/wolf-portfolio/wolf-portfolio.php:423
+msgid "View Work"
+msgstr ""
+
+#: inc/wfolio-register-post-type.php:25
+#: pack/wolf-portfolio/wolf-portfolio.php:424
+msgid "Search Works"
+msgstr ""
+
+#: inc/wfolio-register-post-type.php:26
+msgid "No Works found"
+msgstr ""
+
+#: inc/wfolio-register-post-type.php:27
+msgid "No Works found in Trash"
+msgstr ""
+
+#: inc/wfolio-register-post-type.php:47
+#: pack/wolf-portfolio/wolf-portfolio.php:448
+msgid "Present your work"
+msgstr ""
+
+#: inc/wfolio-register-taxonomy.php:17
+msgid "Portfolio Categories"
+msgstr ""
+
+#: inc/wfolio-register-taxonomy.php:18
+msgid "Portfolio Category"
+msgstr ""
+
+#: inc/wfolio-register-taxonomy.php:19
+msgid "Search Portfolio Categories"
+msgstr ""
+
+#: inc/wfolio-register-taxonomy.php:20
+msgid "Popular Portfolio Categories"
+msgstr ""
+
+#: inc/wfolio-register-taxonomy.php:21
+msgid "All Portfolio Categories"
+msgstr ""
+
+#: inc/wfolio-register-taxonomy.php:22
+msgid "Parent Portfolio Category"
+msgstr ""
+
+#: inc/wfolio-register-taxonomy.php:23
+msgid "Parent Portfolio Category:"
+msgstr ""
+
+#: inc/wfolio-register-taxonomy.php:24
+msgid "Edit Portfolio Category"
+msgstr ""
+
+#: inc/wfolio-register-taxonomy.php:25
+msgid "Update Portfolio Category"
+msgstr ""
+
+#: inc/wfolio-register-taxonomy.php:26
+msgid "Add New Portfolio Category"
+msgstr ""
+
+#: inc/wfolio-register-taxonomy.php:27
+msgid "New Portfolio Category"
+msgstr ""
+
+#: inc/wfolio-register-taxonomy.php:28
+msgid "Separate portfolio categories with commas"
+msgstr ""
+
+#: inc/wfolio-register-taxonomy.php:29
+msgid "Add or remove portfolio categories"
+msgstr ""
+
+#: inc/wfolio-register-taxonomy.php:30
+msgid "Choose from the most used portfolio categories"
+msgstr ""
+
+#: inc/wfolio-register-taxonomy.php:31
+msgid "No categories found"
+msgstr ""
+
+#: inc/wfolio-register-taxonomy.php:32
+#: pack/wolf-portfolio/wolf-portfolio.php:475
+msgid "Categories"
+msgstr ""
+
+#: pack/wolf-portfolio/classes/class-video-thumbnails.php:74
+msgid ""
+"Error retrieving video information from the URL <a "
+"href=\"%1$s\">%1$s</a>.<br />\r\n"
+"\t\t\t\t\t\t\t\t<a href=\"%2$s\">Libcurl error</a> %3$s: <code>%4$s</code>. "
+"\r\n"
+"\t\t\t\t\t\t\t\tIf opening that URL in your web browser returns anything "
+"else than an error page, \r\n"
+"\t\t\t\t\t\t\t\tthe problem may be related to your web server and might be "
+"something your host administrator can solve."
+msgstr ""
+
+#: pack/wolf-portfolio/classes/class-video-thumbnails.php:436
+#: pack/wolf-portfolio/classes/class-video-thumbnails.php:603
+msgid "Reset"
+msgstr ""
+
+#: pack/wolf-portfolio/classes/class-video-thumbnails.php:437
+#: pack/wolf-portfolio/classes/class-video-thumbnails.php:604
+msgid "Delete"
+msgstr ""
+
+#: pack/wolf-portfolio/classes/class-video-thumbnails.php:463
+msgid "Remove featured image"
+msgstr ""
+
+#: pack/wolf-portfolio/classes/class-video-thumbnails.php:474
+msgid "Working..."
+msgstr ""
+
+#: pack/wolf-portfolio/classes/class-video-thumbnails.php:522
+msgid "Set featured image"
+msgstr ""
+
+#: pack/wolf-portfolio/classes/class-video-thumbnails.php:599
+msgid "No video URL in the post."
+msgstr ""
+
+#: pack/wolf-portfolio/classes/class-video-thumbnails.php:600
+msgid ""
+"A video has been attached to this post. Click on \"Generate\" to create a "
+"thumbnail from this video"
+msgstr ""
+
+#: pack/wolf-portfolio/classes/class-video-thumbnails.php:601
+msgid ""
+"You will be able to generate a video thumbnail and use it as featured image "
+"for this post when it is published."
+msgstr ""
+
+#: pack/wolf-portfolio/classes/class-video-thumbnails.php:602
+msgid "Generate"
+msgstr ""
+
+#: pack/wolf-portfolio/includes/functions.php:51
+#. Translators: used between list items, there is a space after the comma.
+msgid ", "
+msgstr ""
+
+#: pack/wolf-portfolio/includes/functions.php:62
+msgid "On %s"
+msgstr ""
+
+#: pack/wolf-portfolio/includes/functions.php:69
+msgid "For %s"
+msgstr ""
+
+#: pack/wolf-portfolio/includes/functions.php:76
+msgid "in %s"
+msgstr ""
+
+#: pack/wolf-portfolio/includes/functions.php:83
+msgid "Launch Project"
+msgstr ""
+
+#: pack/wolf-portfolio/templates/content-work.php:28
+#: templates/content-work.php:32
+msgid "Permalink to %s"
+msgstr ""
+
+#: pack/wolf-portfolio/templates/filter.php:29 templates/filter.php:29
+msgid "All"
+msgstr ""
+
+#: pack/wolf-portfolio/templates/loop/no-work-found.php:12
+#: templates/loop/no-work-found.php:12
+msgid "Nothing found"
+msgstr ""
+
+#: pack/wolf-portfolio/templates/single-work.php:34
+msgid "Edit"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:226
+msgid ""
+"<br><br>\r\n"
+"\t\t\t\t\t\t<a href=\"%1$s\" class=\"button button-primary\">Create a "
+"page</a>\r\n"
+"\t\t\t\t\t\t&nbsp;\r\n"
+"\t\t\t\t\t\t<a href=\"%2$s\" class=\"button button-primary\">Select an "
+"existing page</a>\r\n"
+"\t\t\t\t\t\t&nbsp;\r\n"
+"\t\t\t\t\t\t<a href=\"%3$s\" class=\"button\">Skip setup</a>"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:425
+msgid "No works found"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:426
+msgid "No works found in Trash"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:461
+msgid "Work Categories"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:462
+msgid "Work Type"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:463
+msgid "Search Work Categories"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:464
+msgid "Popular Work Categories"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:465
+msgid "All Work Categories"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:466
+msgid "Parent Work Type"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:467
+msgid "Parent Work Type:"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:468
+msgid "Edit Work Type"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:469
+msgid "Update Work Type"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:470
+msgid "Add New Work Type"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:471
+msgid "New Work Type"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:472
+msgid "Separate work categories with commas"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:473
+msgid "Add or remove work categories"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:474
+msgid "Choose from the most used work categories"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:522
+msgid "Project Link"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:616
+msgid "Use Isotope filter"
+msgstr ""
+
+#: pack/wolf-portfolio/wolf-portfolio.php:724
+msgid ""
+"Additionally, you can add a count, and/or a col (number of column), and/or "
+"a category attribute."
+msgstr ""
+
+#: wolf-portfolio.php:108
+msgid ""
+"%1$s needs at least PHP %2$s installed on your server. You have version "
+"%3$s currently installed. Please contact your hosting service provider if "
+"you're not able to update PHP by yourself."
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wlfthm.es/wolf-portfolio"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A portfolio post type for your theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WolfThemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wolfthemes.com"
+msgstr ""
+
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:6
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:7
+#: dev/node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:8
+msgctxt "a string"
+msgid "String"
+msgstr ""
+
+#: inc/frontend/wfolio-functions.php:89
+#: pack/wolf-portfolio/wolf-portfolio.php:797
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr ""
+
+#: inc/frontend/wfolio-functions.php:90
+#: pack/wolf-portfolio/wolf-portfolio.php:798
+msgctxt "Next post link"
+msgid "%title <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: pack/wolf-portfolio/includes/functions.php:53
+msgctxt "1: post format name. 2: date"
+msgid "%1$s on %2$s"
+msgstr ""

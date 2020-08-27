@@ -1,8 +1,8 @@
 <?php
 /**
- * %NAME% Functions
+ * Portfolio Functions
  *
- * %NAME% front-end functions
+ * Portfolio front-end functions
  *
  * @author WolfThemes
  * @category Core

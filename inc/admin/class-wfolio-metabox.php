@@ -1,6 +1,6 @@
 <?php
 /**
- * %NAME% Metaboxes.
+ * Portfolio Metaboxes.
  *
  * @class Wolf_Portfolio_Admin_Metabox
  * @author WolfThemes

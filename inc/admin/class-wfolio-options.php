@@ -1,6 +1,6 @@
 <?php
 /**
- * %NAME% Options.
+ * Portfolio Options.
  *
  * @class Wolf_Portfolio_Options
  * @author WolfThemes

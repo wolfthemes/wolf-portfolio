@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: Wolf Portfolio
+ * Plugin Name: Portfolio
  * Plugin URI: https://wlfthm.es/wolf-portfolio
- * Description: %DESCRIPTION%
- * Version: 1.2.2
+ * Description: A portfolio post type for your theme.
+ * Version: 1.2.3
  * Author: WolfThemes
  * Author URI: https://wolfthemes.com
  * Requires at least: 5.0
@@ -44,22 +44,19 @@ if ( ! class_exists( 'Wolf_Portfolio' ) ) {
 		/**
 		 * @var string
 		 */
-		public $version = '1.2.2';
+		public $version = '1.2.3';
 
 		/**
-		 * @var %NAME% The single instance of the class
+		 * @var Portfolio The single instance of the class
 		 */
 		protected static $_instance = null;
 
-		/**
-		 * @var string
-		 */
-		private $update_url = 'https://plugins.wolfthemes.com/update';
+
 
 		/**
 		 * @var the support forum URL
 		 */
-		private $support_url = 'https://docs.wolfthemes.com/';
+		private $support_url = 'https://wlfthm.es/help';
 
 		/**
 		 * @var string
@@ -67,13 +64,13 @@ if ( ! class_exists( 'Wolf_Portfolio' ) ) {
 		public $template_url;
 
 		/**
-		 * Main %NAME% Instance
+		 * Main Portfolio Instance
 		 *
-		 * Ensures only one instance of %NAME% is loaded or can be loaded.
+		 * Ensures only one instance of Portfolio is loaded or can be loaded.
 		 *
 		 * @static
 		 * @see WG()
-		 * @return %NAME% - Main instance
+		 * @return Portfolio - Main instance
 		 */
 		public static function instance() {
 			if ( is_null( self::$_instance ) ) {
@@ -83,7 +80,7 @@ if ( ! class_exists( 'Wolf_Portfolio' ) ) {
 		}
 
 		/**
-		 * %NAME% Constructor.
+		 * Portfolio Constructor.
 		 */
 		public function __construct() {
 
@@ -109,7 +106,7 @@ if ( ! class_exists( 'Wolf_Portfolio' ) ) {
 
 				printf(
 					esc_html__( '%1$s needs at least PHP %2$s installed on your server. You have version %3$s currently installed. Please contact your hosting service provider if you\'re not able to update PHP by yourself.', 'wolf-portfolio' ),
-					'%NAME%',
+					'Portfolio',
 					$this->required_php_version,
 					phpversion()
 				);
@@ -166,7 +163,6 @@ if ( ! class_exists( 'Wolf_Portfolio' ) ) {
 				'WFOLIO_SLUG' => plugin_basename( dirname( __FILE__ ) ),
 				'WFOLIO_PATH' => plugin_basename( __FILE__ ),
 				'WFOLIO_VERSION' => $this->version,
-				'WFOLIO_UPDATE_URL' => $this->update_url,
 				'WFOLIO_SUPPORT_URL' => $this->support_url,
 				'WFOLIO_DOC_URI' => 'https://docs.wolfthemes.com/documentation/plugins/' . plugin_basename( dirname( __FILE__ ) ),
 				'WFOLIO_WOLF_DOMAIN' => 'wolfthemes.com',
@@ -228,7 +224,7 @@ if ( ! class_exists( 'Wolf_Portfolio' ) ) {
 		}
 
 		/**
-		 * Function used to Init %NAME% Template Functions - This makes them pluggable by plugins and themes.
+		 * Function used to Init Portfolio Template Functions - This makes them pluggable by plugins and themes.
 		 */
 		public function include_template_functions() {
 			include_once( 'inc/frontend/wfolio-template-functions.php' );
@@ -250,7 +246,7 @@ if ( ! class_exists( 'Wolf_Portfolio' ) ) {
 		}
 
 		/**
-		 * Init %NAME% when WordPress Initialises.
+		 * Init Portfolio when WordPress Initialises.
 		 */
 		public function init() {
 

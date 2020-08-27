@@ -1,6 +1,6 @@
 <?php
 /**
- * %NAME% core functions
+ * Portfolio core functions
  *
  * General core functions available on admin and frontend
  *

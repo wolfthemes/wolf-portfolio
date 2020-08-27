@@ -1,6 +1,6 @@
 <?php
 /**
- * %NAME% register post type
+ * Portfolio register post type
  *
  * @author WolfThemes
  * @category Core

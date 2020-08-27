@@ -1,6 +1,6 @@
 <?php
 /**
- * %NAME% admin functions
+ * Portfolio admin functions
  *
  * Functions available on admin
  *

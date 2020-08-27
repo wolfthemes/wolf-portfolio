@@ -1,6 +1,6 @@
 <?php
 /**
- * %NAME% register taxonomy
+ * Portfolio register taxonomy
  *
  * @author WolfThemes
  * @category Core

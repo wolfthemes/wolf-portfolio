@@ -1,6 +1,6 @@
 <?php
 /**
- * %NAME% Shortcode.
+ * Portfolio Shortcode.
  *
  * @class Wolf_Portfolio_Shortcode
  * @author WolfThemes

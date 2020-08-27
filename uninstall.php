@@ -1,8 +1,8 @@
 <?php
 /**
- * %NAME% Uninstall
+ * Portfolio Uninstall
  *
- * Uninstalling %NAME%
+ * Uninstalling Portfolio
  *
  * @author WolfThemes
  * @category Core

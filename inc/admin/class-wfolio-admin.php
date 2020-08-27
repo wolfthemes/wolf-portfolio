@@ -1,6 +1,6 @@
 <?php
 /**
- * %NAME% Admin.
+ * Portfolio Admin.
  *
  * @class Wolf_Portfolio_Admin
  * @author WolfThemes

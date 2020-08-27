@@ -1,6 +1,6 @@
 <?php
 /**
- * %NAME% register metaboxes
+ * Portfolio register metaboxes
  *
  * @author WolfThemes
  * @category Core
