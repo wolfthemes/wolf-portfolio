@@ -1,5 +1,9 @@
 # Changelog
 
+#### 24th April 2025 - Version 1.2.4
+
+-   Fix: Prevent loading_plugin_text notice message
+
 #### 26th August 2020 - Version 1.2.3
 
 -   Tweak: Unbrand plugin name
