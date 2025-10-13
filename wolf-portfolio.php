@@ -3,7 +3,7 @@
  * Plugin Name: Portfolio
  * Plugin URI: https://wlfthm.es/wolf-portfolio
  * Description: A portfolio post type for your theme.
- * Version: 1.2.4
+ * Version: 1.2.5
  * Author: WolfThemes
  * Author URI: https://wolfthemes.com
  * Requires at least: 6.0
@@ -44,7 +44,7 @@ if ( ! class_exists( 'Wolf_Portfolio' ) ) {
 		/**
 		 * @var string
 		 */
-		public $version = '1.2.4';
+		public $version = '1.2.5';
 
 		/**
 		 * @var Portfolio The single instance of the class
@@ -312,7 +312,7 @@ if ( ! class_exists( 'Wolf_Portfolio' ) ) {
 
 			}
 
-			if ( is_tax( 'work_type' ) ) {
+			if ( is_tax( 'work_type' ) || is_tax( 'sermon_series' ) ) {
 
 				$term = get_queried_object();
 
@@ -391,8 +391,8 @@ if ( ! class_exists( 'Wolf_Portfolio' ) ) {
 				'github_url' => 'https://github.com/' . $repo . '',
 				'zip_url' => 'https://github.com/' . $repo . '/archive/master.zip',
 				'sslverify' => true,
-				'requires' => '5.0',
-				'tested' => '5.5',
+				'requires' => '6.0',
+				'tested' => '6.5',
 				'readme' => 'README.md',
 				'access_token' => '',
 			);

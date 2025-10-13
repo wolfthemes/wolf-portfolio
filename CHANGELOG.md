@@ -1,5 +1,9 @@
 # Changelog
 
+#### 13th October 2025 - Version 1.2.5
+
+-   Other: Custom taxonomy support
+
 #### 24th April 2025 - Version 1.2.4
 
 -   Fix: Prevent loading_plugin_text notice message
