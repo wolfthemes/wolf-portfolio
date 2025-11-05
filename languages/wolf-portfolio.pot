@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the Portfolio package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Portfolio 1.2.5\n"
+"Project-Id-Version: Portfolio 1.2.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wolf-portfolio\n"
-"POT-Creation-Date: 2025-10-13 10:04:21+00:00\n"
+"POT-Creation-Date: 2025-11-05 15:27:21+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -66,6 +66,7 @@ msgid "Index"
 msgstr ""
 
 #: inc/admin/class-wfolio-admin.php:106
+#: pack/wolf-portfolio/inc/admin/class-wfolio-admin.php:106
 msgid ""
 "says : <em>Almost done! you need to <a href=\"%1$s\">create a page</a> for "
 "your portfolio or <a href=\"%2$s\">select an existing page</a> in the "
@@ -73,6 +74,7 @@ msgid ""
 msgstr ""
 
 #: inc/admin/class-wfolio-admin.php:124
+#: pack/wolf-portfolio/inc/admin/class-wfolio-admin.php:124
 msgid ""
 "<br><br>\n"
 "\t\t\t\t\t<a href=\"%1$s\" class=\"button button-primary\">Create a "
@@ -89,22 +91,28 @@ msgid "Portfolio"
 msgstr ""
 
 #: inc/admin/class-wfolio-admin.php:186
+#: pack/wolf-portfolio/inc/admin/class-wfolio-admin.php:186
 msgid "Your portfolio page has been created succesfully"
 msgstr ""
 
 #: inc/admin/class-wfolio-admin.php:208
+#: pack/wolf-portfolio/inc/admin/class-wfolio-admin.php:208
 msgid "You are currently editing the page that shows the portfolio."
 msgstr ""
 
 #: inc/admin/class-wfolio-admin.php:254
+#: pack/wolf-portfolio/inc/admin/class-wfolio-admin.php:254
 msgid "Thumbnail"
 msgstr ""
 
 #: inc/admin/class-wfolio-admin.php:271
+#: pack/wolf-portfolio/inc/admin/class-wfolio-admin.php:271
 msgid "Edit \"%s\""
 msgstr ""
 
 #: inc/admin/class-wfolio-admin.php:281 inc/admin/class-wfolio-options.php:38
+#: pack/wolf-portfolio/inc/admin/class-wfolio-admin.php:281
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:38
 msgid "Settings"
 msgstr ""
 
@@ -115,6 +123,13 @@ msgstr ""
 #: inc/admin/class-wfolio-metabox.php:482
 #: inc/admin/class-wfolio-metabox.php:490
 #: inc/admin/class-wfolio-metabox.php:499
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:234
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:249
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:294
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:474
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:482
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:490
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:499
 msgid "Clear"
 msgstr ""
 
@@ -122,69 +137,91 @@ msgstr ""
 #: inc/admin/class-wfolio-metabox.php:475
 #: inc/admin/class-wfolio-metabox.php:483
 #: inc/admin/class-wfolio-metabox.php:491
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:235
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:475
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:483
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:491
 msgid "Choose a file"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:250
 #: inc/admin/class-wfolio-metabox.php:295
 #: inc/admin/class-wfolio-metabox.php:500
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:250
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:295
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:500
 msgid "Choose an image"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:282
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:282
 msgid "Background color"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:290
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:290
 msgid "Background image"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:307
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:307
 msgid "Background repeat"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:331
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:331
 msgid "Background position"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:344
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:344
 msgid "cover (resize)"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:345
 #: inc/admin/class-wfolio-metabox.php:430
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:345
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:430
 msgid "normal"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:346
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:346
 msgid "responsive (hard resize)"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:351
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:351
 msgid "Background size"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:362
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:362
 msgid "Parallax"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:380
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:380
 msgid "Font color"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:390
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:390
 msgid "Font Family"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:392
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:392
 msgid "default"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:403
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:403
 msgid "Font weight"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:405
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:405
 msgid ""
 "For example: 400 is normal, 700 is bold.The available font weights depend "
 "on the font.<br>Leave empty to use the theme default style"
@@ -192,272 +229,337 @@ msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:411
 #: inc/admin/class-wfolio-metabox.php:429
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:411
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:429
 msgid "auto"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:412
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:412
 msgid "none"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:413
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:413
 msgid "uppercase"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:417
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:417
 msgid "Font transform"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:423
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:423
 msgid "\"auto\" is the default style in the theme options"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:431
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:431
 msgid "italic"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:435
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:435
 msgid "Font style"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:441
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:441
 msgid "\"auto\" is the default style defined in the theme options"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:448
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:448
 msgid "Font letter spacing (omit px)"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:450
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:450
 msgid "Leave empty to use the style defined in the theme options"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:472
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:472
 msgid "mp4 URL"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:480
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:480
 msgid "webm URL"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:488
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:488
 msgid "ogv URL"
 msgstr ""
 
 #: inc/admin/class-wfolio-metabox.php:496
+#: pack/wolf-portfolio/inc/admin/class-wfolio-metabox.php:496
 msgid "Video Image Fallback"
 msgstr ""
 
 #: inc/admin/class-wfolio-options.php:39
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:39
 msgid "Shortcode"
 msgstr ""
 
 #: inc/admin/class-wfolio-options.php:67
 #: inc/admin/wfolio-admin-functions.php:28
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:67
+#: pack/wolf-portfolio/inc/admin/wfolio-admin-functions.php:28
 msgid "Portfolio Page"
 msgstr ""
 
 #: inc/admin/class-wfolio-options.php:68
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:68
 msgid "Portfolio Item Name"
 msgstr ""
 
 #: inc/admin/class-wfolio-options.php:69
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:69
 msgid "Portfolio Item Slug"
 msgstr ""
 
 #: inc/admin/class-wfolio-options.php:71
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:71
 msgid "Max number of column"
 msgstr ""
 
 #: inc/admin/class-wfolio-options.php:110
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:110
 msgid "- Disabled -"
 msgstr ""
 
 #: inc/admin/class-wfolio-options.php:123
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:123
 msgid "Select a page..."
 msgstr ""
 
 #: inc/admin/class-wfolio-options.php:162
 #: inc/admin/class-wfolio-options.php:177
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:162
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:177
 msgid "Number of column on desktop screen"
 msgstr ""
 
 #: inc/admin/class-wfolio-options.php:188
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:188
 msgid "Portfolio Settings"
 msgstr ""
 
 #: inc/admin/class-wfolio-options.php:191
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:191
 msgid "Settings saved."
 msgstr ""
 
 #: inc/admin/class-wfolio-options.php:197
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:197
 msgid "Save Changes"
 msgstr ""
 
 #: inc/admin/class-wfolio-options.php:209
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:209
 msgid "Portfolio Shortcode"
 msgstr ""
 
 #: inc/admin/class-wfolio-options.php:210
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:210
 msgid ""
 "To display your last works in your post or page you can use the following "
 "shortcode."
 msgstr ""
 
 #: inc/admin/class-wfolio-options.php:212
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:212
 msgid "Additionally, you can add a count and/or a category attribute."
 msgstr ""
 
 #: inc/admin/class-wfolio-options.php:215
+#: pack/wolf-portfolio/inc/admin/class-wfolio-options.php:215
 msgid "You can also add a column count attribute."
 msgstr ""
 
-#: inc/admin/updater.php:434
+#: inc/admin/updater.php:434 pack/wolf-portfolio/inc/admin/updater.php:434
 msgid ""
 "The plugin has been updated, but could not be reactivated. Please "
 "reactivate it manually."
 msgstr ""
 
-#: inc/admin/updater.php:435
+#: inc/admin/updater.php:435 pack/wolf-portfolio/inc/admin/updater.php:435
 msgid "Plugin reactivated successfully."
 msgstr ""
 
 #: inc/admin/wfolio-metaboxes.php:17
+#: pack/wolf-portfolio/inc/admin/wfolio-metaboxes.php:17
 msgid "Work Details"
 msgstr ""
 
 #: inc/admin/wfolio-metaboxes.php:21
+#: pack/wolf-portfolio/inc/admin/wfolio-metaboxes.php:21
 msgid "Client"
 msgstr ""
 
 #: inc/admin/wfolio-metaboxes.php:27
+#: pack/wolf-portfolio/inc/admin/wfolio-metaboxes.php:27
 msgid "Link"
 msgstr ""
 
 #: inc/wfolio-register-post-type.php:17
+#: pack/wolf-portfolio/inc/wfolio-register-post-type.php:17
 msgid "Works"
 msgstr ""
 
 #: inc/wfolio-register-post-type.php:18
+#: pack/wolf-portfolio/inc/wfolio-register-post-type.php:18
 msgid "Work"
 msgstr ""
 
 #: inc/wfolio-register-post-type.php:19
+#: pack/wolf-portfolio/inc/wfolio-register-post-type.php:19
 msgid "Add New"
 msgstr ""
 
 #: inc/wfolio-register-post-type.php:20
+#: pack/wolf-portfolio/inc/wfolio-register-post-type.php:20
 msgid "Add New Work"
 msgstr ""
 
 #: inc/wfolio-register-post-type.php:21
+#: pack/wolf-portfolio/inc/wfolio-register-post-type.php:21
 msgid "All Works"
 msgstr ""
 
 #: inc/wfolio-register-post-type.php:22
+#: pack/wolf-portfolio/inc/wfolio-register-post-type.php:22
 msgid "Edit Work"
 msgstr ""
 
 #: inc/wfolio-register-post-type.php:23
+#: pack/wolf-portfolio/inc/wfolio-register-post-type.php:23
 msgid "New Work"
 msgstr ""
 
 #: inc/wfolio-register-post-type.php:24
+#: pack/wolf-portfolio/inc/wfolio-register-post-type.php:24
 msgid "View Work"
 msgstr ""
 
 #: inc/wfolio-register-post-type.php:25
+#: pack/wolf-portfolio/inc/wfolio-register-post-type.php:25
 msgid "Search Works"
 msgstr ""
 
 #: inc/wfolio-register-post-type.php:26
+#: pack/wolf-portfolio/inc/wfolio-register-post-type.php:26
 msgid "No Works found"
 msgstr ""
 
 #: inc/wfolio-register-post-type.php:27
+#: pack/wolf-portfolio/inc/wfolio-register-post-type.php:27
 msgid "No Works found in Trash"
 msgstr ""
 
 #: inc/wfolio-register-post-type.php:47
+#: pack/wolf-portfolio/inc/wfolio-register-post-type.php:47
 msgid "Present your work"
 msgstr ""
 
 #: inc/wfolio-register-taxonomy.php:17
+#: pack/wolf-portfolio/inc/wfolio-register-taxonomy.php:17
 msgid "Portfolio Categories"
 msgstr ""
 
 #: inc/wfolio-register-taxonomy.php:18
+#: pack/wolf-portfolio/inc/wfolio-register-taxonomy.php:18
 msgid "Portfolio Category"
 msgstr ""
 
 #: inc/wfolio-register-taxonomy.php:19
+#: pack/wolf-portfolio/inc/wfolio-register-taxonomy.php:19
 msgid "Search Portfolio Categories"
 msgstr ""
 
 #: inc/wfolio-register-taxonomy.php:20
+#: pack/wolf-portfolio/inc/wfolio-register-taxonomy.php:20
 msgid "Popular Portfolio Categories"
 msgstr ""
 
 #: inc/wfolio-register-taxonomy.php:21
+#: pack/wolf-portfolio/inc/wfolio-register-taxonomy.php:21
 msgid "All Portfolio Categories"
 msgstr ""
 
 #: inc/wfolio-register-taxonomy.php:22
+#: pack/wolf-portfolio/inc/wfolio-register-taxonomy.php:22
 msgid "Parent Portfolio Category"
 msgstr ""
 
 #: inc/wfolio-register-taxonomy.php:23
+#: pack/wolf-portfolio/inc/wfolio-register-taxonomy.php:23
 msgid "Parent Portfolio Category:"
 msgstr ""
 
 #: inc/wfolio-register-taxonomy.php:24
+#: pack/wolf-portfolio/inc/wfolio-register-taxonomy.php:24
 msgid "Edit Portfolio Category"
 msgstr ""
 
 #: inc/wfolio-register-taxonomy.php:25
+#: pack/wolf-portfolio/inc/wfolio-register-taxonomy.php:25
 msgid "Update Portfolio Category"
 msgstr ""
 
 #: inc/wfolio-register-taxonomy.php:26
+#: pack/wolf-portfolio/inc/wfolio-register-taxonomy.php:26
 msgid "Add New Portfolio Category"
 msgstr ""
 
 #: inc/wfolio-register-taxonomy.php:27
+#: pack/wolf-portfolio/inc/wfolio-register-taxonomy.php:27
 msgid "New Portfolio Category"
 msgstr ""
 
 #: inc/wfolio-register-taxonomy.php:28
+#: pack/wolf-portfolio/inc/wfolio-register-taxonomy.php:28
 msgid "Separate portfolio categories with commas"
 msgstr ""
 
 #: inc/wfolio-register-taxonomy.php:29
+#: pack/wolf-portfolio/inc/wfolio-register-taxonomy.php:29
 msgid "Add or remove portfolio categories"
 msgstr ""
 
 #: inc/wfolio-register-taxonomy.php:30
+#: pack/wolf-portfolio/inc/wfolio-register-taxonomy.php:30
 msgid "Choose from the most used portfolio categories"
 msgstr ""
 
 #: inc/wfolio-register-taxonomy.php:31
+#: pack/wolf-portfolio/inc/wfolio-register-taxonomy.php:31
 msgid "No categories found"
 msgstr ""
 
 #: inc/wfolio-register-taxonomy.php:32
+#: pack/wolf-portfolio/inc/wfolio-register-taxonomy.php:32
 msgid "Categories"
 msgstr ""
 
+#: pack/wolf-portfolio/templates/content-work.php:32
 #: templates/content-work.php:32
 msgid "Permalink to %s"
 msgstr ""
 
-#: templates/filter.php:29
+#: pack/wolf-portfolio/templates/filter.php:29 templates/filter.php:29
 msgid "All"
 msgstr ""
 
+#: pack/wolf-portfolio/templates/loop/no-work-found.php:12
 #: templates/loop/no-work-found.php:12
 msgid "Nothing found"
 msgstr ""
 
-#: wolf-portfolio.php:106
+#: pack/wolf-portfolio/wolf-portfolio.php:106 wolf-portfolio.php:106
 msgid ""
 "%1$s needs at least PHP %2$s installed on your server. You have version "
 "%3$s currently installed. Please contact your hosting service provider if "
@@ -488,11 +590,13 @@ msgid "String"
 msgstr ""
 
 #: inc/frontend/wfolio-functions.php:89
+#: pack/wolf-portfolio/inc/frontend/wfolio-functions.php:89
 msgctxt "Previous post link"
 msgid "<span class=\"meta-nav\">&larr;</span> %title"
 msgstr ""
 
 #: inc/frontend/wfolio-functions.php:90
+#: pack/wolf-portfolio/inc/frontend/wfolio-functions.php:90
 msgctxt "Next post link"
 msgid "%title <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""

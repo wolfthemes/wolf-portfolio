@@ -1,5 +1,9 @@
 # Changelog
 
+#### 5th November 2025 - Version 1.2.6
+
+-   Feat: Added taxonomy file fallback in template loader
+
 #### 13th October 2025 - Version 1.2.5
 
 -   Other: Custom taxonomy support
