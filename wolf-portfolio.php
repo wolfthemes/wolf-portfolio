@@ -312,15 +312,26 @@ if ( ! class_exists( 'Wolf_Portfolio' ) ) {
 
 			}
 
-			if ( is_tax( 'work_type' ) || is_tax( 'sermon_series' ) ) {
+			// Get all taxonomies for 'work' post type
+			$work_taxonomies = get_object_taxonomies( 'work' );
+			$current_taxonomy = get_query_var( 'taxonomy' );
+
+			if ( is_tax() && in_array( $current_taxonomy, $work_taxonomies ) ) {
 
 				$term = get_queried_object();
+				$file = 'taxonomy-' . $term->taxonomy . '.php';
 
-				$file 	= 'taxonomy-' . $term->taxonomy . '.php';
-				$find[] 	= 'taxonomy-' . $term->taxonomy . '-' . $term->slug . '.php';
-				$find[] 	= $this->template_url . 'taxonomy-' . $term->taxonomy . '-' . $term->slug . '.php';
-				$find[] 	= $file;
-				$find[] 	= $this->template_url . $file;
+				// Try specific taxonomy-term templates first
+				$find[] = 'taxonomy-' . $term->taxonomy . '-' . $term->slug . '.php';
+				$find[] = $this->template_url . 'taxonomy-' . $term->taxonomy . '-' . $term->slug . '.php';
+
+				// Try specific taxonomy templates
+				$find[] = $file;
+				$find[] = $this->template_url . $file;
+
+				// Fallback to general work taxonomy template
+				$find[] = 'taxonomy-work_default.php';
+				$find[] = $this->template_url . 'taxonomy-work_default.php';
 
 			} elseif ( is_post_type_archive( 'work' ) ) {
 
