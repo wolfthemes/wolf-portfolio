@@ -27,6 +27,7 @@ jobs:
           echo "tested=$(jq -r '.tested' app.config.json)" >> $GITHUB_OUTPUT
 
       - name: Build CSS
+        if: ${{ hashFiles('package.json') != '' }}
         run: |
           npm ci
           npm run build
