@@ -2,12 +2,23 @@
 dev
 pack
 
-# Windows image file caches
+# IDE / OS
+.vscode/
+.idea/
 Thumbs.db
-
-# Folder config file
 Desktop.ini
-
-# Mac crap
 .DS_Store
-/vendor/
+*.swp
+
+# Dependencies
+node_modules/
+.grunt/
+tmp/
+vendor/
+wpcs/
+
+# Local AI tooling
+.claude/
+.codex/
+.agents/
+graphify-out/

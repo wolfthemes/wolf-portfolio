@@ -1,5 +1,9 @@
 # Changelog
 
+#### 6th July 2026 - Version 1.2.7
+
+-   Feat: namespaced OOP structure
+
 #### 7th November 2025 - Version 1.2.6
 
 -   Feat: Added taxonomy file fallback in template loader
