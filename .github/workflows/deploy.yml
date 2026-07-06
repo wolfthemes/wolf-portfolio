@@ -2,7 +2,9 @@ name: Build & Deploy
 
 on:
   push:
-    branches: [ master ]
+    # ponytail: feature branch trigger for pre-release testing only — remove at 1.2.7 release,
+    # or it will overwrite the production info.json on every stage push.
+    branches: [ master, feature/claude-gutenberg-namespacing ]
   workflow_dispatch:
 
 jobs:
