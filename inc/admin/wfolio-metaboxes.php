@@ -32,4 +32,4 @@ $metaboxes = array(
 	),
 );
 
-new Wolf_Portfolio_Admin_Metabox( $metaboxes );
+new \WolfPortfolio\Admin\Metabox( $metaboxes );

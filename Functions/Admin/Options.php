@@ -9,12 +9,14 @@
  * @version 1.2.2
  */
 
+namespace WolfPortfolio\Admin;
+
 defined( 'ABSPATH' ) || exit;
 
 /**
  * Wolf_Portfolio_Options class.
  */
-class Wolf_Portfolio_Options {
+class Options {
 	/**
 	 * Constructor
 	 */
@@ -219,4 +221,3 @@ class Wolf_Portfolio_Options {
 	}
 }
 
-return new Wolf_Portfolio_Options();

@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wolf-portfolio/last-works",
+	"title": "Last Works",
+	"category": "widgets",
+	"icon": "portfolio",
+	"description": "Display your latest portfolio works in a grid.",
+	"keywords": [ "portfolio", "work", "grid" ],
+	"textdomain": "wolf-portfolio",
+	"attributes": {
+		"count": { "type": "number", "default": 3 },
+		"category": { "type": "string", "default": "" },
+		"col": { "type": "number", "default": 3 },
+		"padding": { "type": "string", "default": "yes" }
+	},
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ]
+	},
+	"editorScript": "wolf-portfolio-last-works-editor"
+}

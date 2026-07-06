@@ -3,7 +3,11 @@
  * Class by Omar Abid
  * https://github.com/omarabid/Self-Hosted-WordPress-Plugin-repository
  */
-class Wolf_Portfolio_Update {
+namespace WolfPortfolio\Admin;
+
+defined( 'ABSPATH' ) || exit;
+
+class Update {
 	/**
 	 * The plugin current version
 	 * @var string
@@ -65,7 +69,7 @@ class Wolf_Portfolio_Update {
 
 		// If a newer version is available, add the update
 		if ( version_compare( $this->current_version, $remote_version, '<' ) ) {
-			$obj = new stdClass();
+			$obj = new \stdClass();
 			$obj->slug = $this->slug;
 			$obj->new_version = $remote_version;
 			$obj->url = $this->update_path;

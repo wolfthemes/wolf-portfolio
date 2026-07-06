@@ -10,12 +10,14 @@
  * @since 1.1.6
  */
 
+namespace WolfPortfolio\Frontend;
+
 defined( 'ABSPATH' ) || exit;
 
 /**
  * Wolf_Portfolio_Shortcode class.
  */
-class Wolf_Portfolio_Shortcode {
+class Shortcodes {
 	/**
 	 * Constructor
 	 */
@@ -77,7 +79,7 @@ class Wolf_Portfolio_Shortcode {
 		$class .= ' shortcode-work-padding-' . esc_attr( $padding );
 
 		add_filter( 'posts_where', array( $this, 'filter_where' ) );
-		$loop = new WP_Query( $args );
+		$loop = new \WP_Query( $args );
 		remove_filter( 'posts_where', array( $this, 'filter_where' ) );
 
 		if ( $loop->have_posts() ) : ?>
@@ -133,4 +135,3 @@ class Wolf_Portfolio_Shortcode {
 
 } // end class
 
-return new Wolf_Portfolio_Shortcode();

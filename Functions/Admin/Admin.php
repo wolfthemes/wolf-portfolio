@@ -9,12 +9,14 @@
  * @version 1.2.2
  */
 
+namespace WolfPortfolio\Admin;
+
 defined( 'ABSPATH' ) || exit;
 
 /**
  * Wolf_Portfolio_Admin class.
  */
-class Wolf_Portfolio_Admin {
+class Admin {
 	/**
 	 * Constructor
 	 */
@@ -34,9 +36,8 @@ class Wolf_Portfolio_Admin {
 	 * Include any classes we need within admin.
 	 */
 	public function includes() {
-		include_once( 'class-wfolio-options.php' );
-		include_once( 'class-wfolio-metabox.php' );
-		include_once( 'wfolio-admin-functions.php' );
+		new Options();
+		include_once WFOLIO_DIR . '/inc/admin/wfolio-admin-functions.php';
 	}
 
 	/**
@@ -68,7 +69,7 @@ class Wolf_Portfolio_Admin {
 	 * Add metaboxes
 	 */
 	public function metaboxes() {
-		include_once( 'wfolio-metaboxes.php' );
+		include_once WFOLIO_DIR . '/inc/admin/wfolio-metaboxes.php';
 	}
 
 	/**
@@ -294,9 +295,7 @@ class Wolf_Portfolio_Admin {
 		$remote_path = WFOLIO_UPDATE_URL . '/' . $plugin_slug;
 		$plugin_data = get_plugin_data( WFOLIO_DIR . '/' . WFOLIO_SLUG . '.php' );
 		$current_version = $plugin_data['Version'];
-		include_once( 'class-wfolio-update.php');
-		new Wolf_Portfolio_Update( $current_version, $remote_path, $plugin_path );
+		new Update( $current_version, $remote_path, $plugin_path );
 	}
 }
 
-return new Wolf_Portfolio_Admin();
