@@ -3,6 +3,8 @@
 #### 6th July 2026 - Version 1.2.7
 
 -   Feat: namespaced OOP structure
+-   Feat: "Last Works" Gutenberg block
+-   Feat: new update system via downloads.wolfthemes.cloud (transitional release: still installable from GitHub; from 1.2.8 updates are served exclusively by the new system)
 
 #### 7th November 2025 - Version 1.2.6
 

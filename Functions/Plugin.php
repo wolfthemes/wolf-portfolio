@@ -105,6 +105,10 @@ class Plugin {
 		add_action( 'init', array( $this, 'register_block' ) );
 		register_activation_hook( WFOLIO_PLUGIN_FILE, array( $this, 'activate' ) );
 
+		// New update system (downloads.wolfthemes.cloud info.json).
+		new Core\Updater();
+
+		// ponytail: legacy GitHub updater kept for the 1.2.7 transition only — remove in 1.2.8.
 		add_action( 'admin_init', array( $this, 'plugin_update' ) );
 	}
 

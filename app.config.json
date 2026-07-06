@@ -10,5 +10,9 @@
 	"link": "https://github.com/wolfthemes/wolf-portfolio",
 	"shortlink": "http://wlfthm.es/wolf-portfolio",
 	"author": "WolfThemes",
-	"authorURI": "https://wolfthemes.com"
+	"authorURI": "https://wolfthemes.com",
+	"download_url": "https://downloads.wolfthemes.cloud/plugins/wolf-portfolio/wolf-portfolio.zip",
+	"requires": "6.0",
+	"requires_php": "7.4",
+	"tested": "6.8"
 }
