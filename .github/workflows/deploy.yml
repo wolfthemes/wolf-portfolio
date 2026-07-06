@@ -72,6 +72,10 @@ jobs:
 
       - name: Upload to server
         run: |
+          ssh -i ~/.ssh/deploy_key \
+            ${{ secrets.DEPLOY_USER }}@wolfthemes.store \
+            "mkdir -p ${{ secrets.DEPLOY_PATH }}"
+
           scp -i ~/.ssh/deploy_key \
             /tmp/wolf-portfolio.zip \
             ${{ secrets.DEPLOY_USER }}@wolfthemes.store:${{ secrets.DEPLOY_PATH }}/wolf-portfolio.zip
