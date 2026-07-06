@@ -34,3 +34,13 @@ There is no test suite. Verify with `php -l` and by loading the plugin on the Lo
 ## Backward compatibility rules
 
 Themes in the wild call the global `inc/` functions, reference legacy class names, and override `templates/`. Never remove or rename: global functions, hook names (`wolf_portfolio_*`, `before_wolf_portfolio_init`), option names (`_wolf_portfolio_*`), the `work` post type / `work_type` taxonomy, template file names, or legacy class aliases. New OOP code goes in `Functions/`; legacy names keep working via the alias map in `wolf-portfolio.php`.
+
+## graphify
+
+This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
+
+Rules:
+- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
+- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
+- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
+- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
