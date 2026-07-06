@@ -27,7 +27,7 @@ class Plugin {
 	/**
 	 * @var string
 	 */
-	public $version = '1.2.6';
+	public $version = '1.2.7';
 
 	/**
 	 * @var Plugin The single instance of the class
