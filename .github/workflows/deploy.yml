@@ -68,21 +68,21 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan wolfthemes.store >> ~/.ssh/known_hosts
+          ssh-keyscan ${{ secrets.DEPLOY_HOST }} >> ~/.ssh/known_hosts
 
       - name: Upload to server
         run: |
           ssh -i ~/.ssh/deploy_key \
-            ${{ secrets.DEPLOY_USER }}@wolfthemes.store \
+            ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} \
             "mkdir -p ${{ secrets.DEPLOY_PATH }}"
 
           scp -i ~/.ssh/deploy_key \
             /tmp/wolf-portfolio.zip \
-            ${{ secrets.DEPLOY_USER }}@wolfthemes.store:${{ secrets.DEPLOY_PATH }}/wolf-portfolio.zip
+            ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}/wolf-portfolio.zip
 
           scp -i ~/.ssh/deploy_key \
             info.json \
-            ${{ secrets.DEPLOY_USER }}@wolfthemes.store:${{ secrets.DEPLOY_PATH }}/info.json
+            ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}/info.json
 
       - name: Cleanup SSH key
         if: always()
