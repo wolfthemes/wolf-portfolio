@@ -3,11 +3,11 @@
  * Plugin Name: Portfolio
  * Plugin URI: https://wlfthm.es/wolf-portfolio
  * Description: A portfolio post type for your theme.
- * Version: 1.4.0
+ * Version: 1.3.0
  * Author: WolfThemes
  * Author URI: https://wolfthemes.com
  * Requires at least: 6.0
- * Tested up to: 7.1
+ * Tested up to: 6.8
  *
  * Text Domain: wolf-portfolio
  * Domain Path: /languages/
