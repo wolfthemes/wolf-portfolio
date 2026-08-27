@@ -14,5 +14,5 @@
 	"download_url": "https://downloads.wolfthemes.cloud/plugins/wolf-portfolio/wolf-portfolio.zip",
 	"requires": "6.0",
 	"requires_php": "7.4",
-	"tested": "6.8"
+	"tested": "7.1"
 }
