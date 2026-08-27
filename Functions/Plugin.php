@@ -27,7 +27,7 @@ class Plugin {
 	/**
 	 * @var string
 	 */
-	public $version = '1.2.7';
+	public $version = '1.4.0';
 
 	/**
 	 * @var Plugin The single instance of the class
@@ -108,7 +108,7 @@ class Plugin {
 		// New update system (downloads.wolfthemes.cloud info.json).
 		new Core\Updater();
 
-		// ponytail: legacy GitHub updater kept for the 1.2.7 transition only — remove in 1.2.8.
+		// ponytail: legacy GitHub updater kept for the 1.4.0 transition only — remove once downloads.wolfthemes.cloud is confirmed live.
 		add_action( 'admin_init', array( $this, 'plugin_update' ) );
 	}
 

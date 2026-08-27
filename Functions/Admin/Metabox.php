@@ -6,7 +6,7 @@
  * @author WolfThemes
  * @category Admin
  * @package WolfPortfolio/Admin
- * @version 1.2.2
+ * @version 1.4.0
  */
 
 namespace WolfPortfolio\Admin;

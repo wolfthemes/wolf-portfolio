@@ -1,5 +1,10 @@
 # Changelog
 
+#### 27th August 2026 - Version 1.4.0
+
+-   Chore: version aligned with wolf-videos 1.4.0
+-   Tested up to WordPress 7.1
+
 #### 6th July 2026 - Version 1.2.7
 
 -   Feat: namespaced OOP structure

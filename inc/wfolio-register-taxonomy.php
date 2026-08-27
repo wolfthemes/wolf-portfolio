@@ -5,7 +5,7 @@
  * @author WolfThemes
  * @category Core
  * @package WolfPortfolio/Admin
- * @version 1.2.2
+ * @version 1.4.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

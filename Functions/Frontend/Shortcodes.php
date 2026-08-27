@@ -6,7 +6,7 @@
  * @author WolfThemes
  * @category Core
  * @package WolfPortfolio/Shortcode
- * @version 1.2.2
+ * @version 1.4.0
  * @since 1.1.6
  */
 
